@@ -1,0 +1,19 @@
+{
+  "name": "learnts",
+  "version": "1.0.0",
+  "description": "Learn JS and TS through actual combat",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dongyuanwai/learnts.git"
+  },
+  "author": "yang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dongyuanwai/learnts/issues"
+  },
+  "homepage": "https://github.com/dongyuanwai/learnts#readme"
+}
