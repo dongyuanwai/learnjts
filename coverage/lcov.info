@@ -1,0 +1,17 @@
+TN:
+SF:src\getDataType.js
+FN:4,getDataType
+FNF:1
+FNH:1
+FNDA:2,getDataType
+DA:5,2
+DA:6,2
+DA:7,1
+DA:9,1
+LF:4
+LH:4
+BRDA:6,0,0,1
+BRDA:6,0,1,1
+BRF:2
+BRH:2
+end_of_record

@@ -3,17 +3,25 @@
   "version": "1.0.0",
   "description": "Learn JS and TS through actual combat",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "jest"
+  },
+  "jest": {
+    "collectCoverage": true
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dongyuanwai/learnts.git"
   },
-  "author": "yang",
+  "author": "yuanwai",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/dongyuanwai/learnts/issues"
   },
-  "homepage": "https://github.com/dongyuanwai/learnts#readme"
+  "homepage": "https://github.com/dongyuanwai/learnts#readme",
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.17.9",
+    "jest": "^28.0.2"
+  }
 }

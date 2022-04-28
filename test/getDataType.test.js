@@ -1,5 +1,9 @@
-import getDataType from './src/getDataType.js';
+import getDataType from '../src/getDataType.js';
 
-test('sum(2 + 2) 等于 4', () => {
-  expect(getDataType(2)).toBe(number);
+test('getDataType(2)===number', () => {
+  expect(getDataType(2)).toBe("number");
+})
+
+test('getDataType({a:1})===object', () => {
+    expect(getDataType({a:1})).toBe("object");
 })
