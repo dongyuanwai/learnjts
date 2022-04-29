@@ -22,6 +22,7 @@
   "homepage": "https://github.com/dongyuanwai/learnts#readme",
   "devDependencies": {
     "@babel/plugin-transform-modules-commonjs": "^7.17.9",
+    "eslint": "^8.14.0",
     "jest": "^28.0.2"
   }
 }
