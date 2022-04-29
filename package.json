@@ -1,6 +1,6 @@
 {
-  "name": "learnts",
-  "version": "1.0.0",
+  "name": "learnjts",
+  "version": "1.0.1",
   "description": "Learn JS and TS through actual combat",
   "main": "index.js",
   "type": "module",

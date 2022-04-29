@@ -1,5 +1,6 @@
 /**
- * 
+ * params target 目标元素
+ * return 字符串
  */
 function getDataType(target){
     let type = typeof target
