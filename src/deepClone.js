@@ -6,6 +6,7 @@
 
 const isComplexDataType = obj => (typeof obj === 'object' || typeof obj === 'function') && (obj !== null)
 const deepClone = function (obj, hash = new WeakMap()) {
+    if(typeof obj !== 'object') return obj
     // 日期对象直接返回一个新的日期对象
     if (obj.constructor === Date) return new Date(obj)
     //正则对象直接返回一个新的正则对象   

@@ -1,8 +1,8 @@
 /*
  * @Author: yuanwai
  * @Date: 2022-04-28 22:35:16
- * @LastEditors: yuanwai
- * @LastEditTime: 2022-05-01 20:39:08
+ * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2022-05-03 22:57:13
  * @FilePath: \learnjts\index.js
  * @Description: 
  * 
@@ -16,7 +16,7 @@ let obj = {
     a:{b:1},
     d:Symbol(100)
 }
-console.log("====",obj,deepClone(obj))
+console.log("====",obj,deepClone(obj),deepClone(100))
 
 export {
     getDataType,
