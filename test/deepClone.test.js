@@ -1,19 +1,4 @@
-/*
- * @Author: your name
- * @Date: 2022-05-03 23:00:44
- * @LastEditTime: 2022-05-03 23:10:40
- * @LastEditors: Please set LastEditors
- * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
- * @FilePath: \learnjts\test\deepClone.test.js
- */
-/*
- * @Author: your name
- * @Date: 2022-05-03 22:28:43
- * @LastEditTime: 2022-05-03 22:30:36
- * @LastEditors: Please set LastEditors
- * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
- * @FilePath: \learnjts\test\deepClone.test.js
- */
+
 /**
  * @description: 
  * @param {*}
