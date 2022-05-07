@@ -12,6 +12,9 @@ function capitalNum(num){
     }else if(num > 10 && num < 100){
         const decade = String(num)[0];
         const single = String(num)[1];
+        if(num < 20){
+            return `十${capitalList[Number(single)]}`;
+        }
         if(Number(single) === 0){
             return `${capitalList[Number(decade)]}十`;
         }else{

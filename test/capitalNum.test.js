@@ -7,6 +7,10 @@ test('3 输出 三',()=>{
     expect(capitalNum(3)).toBe("三")
 })
 
+test('13 输出 十三',()=>{
+    expect(capitalNum(13)).toBe("十三")
+})
+
 test('23 输出 二十三',()=>{
   expect(capitalNum(23)).toBe("二十三")
 })

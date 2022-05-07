@@ -15,5 +15,5 @@ test('数字',()=>{
 })
 
 test('全都有',()=>{
-  expect(deepClone({a:1,b:{c:100},e:Symbol(100)})).toStrictEqual({a:1,b:{c:100},e:Symbol(100)})
+  expect(deepClone({a:1,b:{c:100},e:Symbol(100)})).toEqual({a:1,b:{c:100},e:Symbol(100)})
 })
