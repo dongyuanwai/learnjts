@@ -6,8 +6,8 @@
 npm install learnjts
 ```
 # 使用
-首先先引入
 ```js
+// 首先先引入需要的方法名
 import getDataType from '../src/getDataType.js';
 
 //再直接调用
