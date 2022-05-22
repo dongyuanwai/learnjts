@@ -1,7 +1,7 @@
 /**
- * @description: 
- * @param {*}
- * @return {*}
+ * @description: 深度克隆
+ * @param {*} 传入要克隆的对象
+ * @return {*} 返回一个深拷贝新的对象
  */
 
  const isComplexDataType = (target) => (typeof target === 'object' || typeof target === 'function') && (target !== null)
