@@ -11,7 +11,7 @@ npm install learnjts
 
 ```js
 // 首先先引入需要的方法名
-import getDataType from '../src/getDataType.js';
+import getDataType from 'learnjts';
 
 //再直接调用
 getDataType(100) //会返回 number
