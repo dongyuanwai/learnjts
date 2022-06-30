@@ -3,9 +3,10 @@
   "version": "1.0.5",
   "description": "Learn JS and TS through actual combat",
   "main": "index.js",
-  "type": "module",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
   },
   "jest": {
     "collectCoverage": true
@@ -23,6 +24,7 @@
   "devDependencies": {
     "@babel/plugin-transform-modules-commonjs": "^7.17.9",
     "eslint": "^8.14.0",
-    "jest": "^28.0.2"
+    "jest": "^28.0.2",
+    "vuepress": "^2.0.0-beta.48"
   }
 }
