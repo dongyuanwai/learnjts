@@ -3,10 +3,11 @@
   "version": "1.0.5",
   "description": "Learn JS and TS through actual combat",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "jest",
-    "dev": "vuepress dev docs",
-    "build": "vuepress build docs"
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
   },
   "jest": {
     "collectCoverage": true

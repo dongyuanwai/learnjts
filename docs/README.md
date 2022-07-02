@@ -1,10 +1,12 @@
 ---
 home: true
-heroImage: /logo.jpg
+heroImage: /images/logo.png
 heroText: JS工具库
 tagline: 一点一滴都是进步
-actionText: 马上进入 →
-actionLink: /pages/folder1/test1.md
+actions:
+  - text: 快速上手 →
+    link: /zh/guide/getting-started.html
+    type: primary
 features:
 - title: 个人工具
   details: JS工具类方法，手写常用js方法汇总，建造一个属于自己的工具库；不追求大而全，目标是小而实用
