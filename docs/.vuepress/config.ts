@@ -1,10 +1,23 @@
 import { defineUserConfig,defaultTheme } from 'vuepress'
+const { searchPlugin } = require('@vuepress/plugin-search')
 
 export default defineUserConfig({
   lang: 'zh-CN',
   title: 'LearnJTs',
   description: 'JS工具类方法,手写常用js方法汇总',
   head: [['link', { rel: 'icon', href: '/images/logo.png' }]],
+  plugins: [
+    searchPlugin({
+      locales: {
+        '/': {
+          placeholder: 'Search',
+        },
+        '/zh/': {
+          placeholder: '搜索',
+        },
+      },
+    }),
+  ],
   theme: defaultTheme({
     	// tab栏的图标; 图片 / 会自动去public文件夹里找图片
       	logo: 'https://vuejs.org/images/logo.png',
