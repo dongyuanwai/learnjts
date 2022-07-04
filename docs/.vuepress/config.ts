@@ -20,42 +20,45 @@ export default defineUserConfig({
   ],
   theme: defaultTheme({
     	// tab栏的图标; 图片 / 会自动去public文件夹里找图片
-      	logo: 'https://vuejs.org/images/logo.png',
+      	logo: '/images/logo.png',
 	
 	 	// 顶部导航条   
 	  	navbar: [
 			{
 				text: '介绍',
-				link: '/pages/test1.md',
+				link: '/pages/introduce.md',
 			},
 			// NavbarGroup
 			{
 				text: '教程',
 				children: [
 					{
-					  text: '使用指南',
-					  link: '/pages/learnJTs/guide1.md',
+					  text: '安装指南',
+					  link: '/pages/learnJTs/install_guide.md',
 					 // 该元素将一直处于激活状态
-            			activeMatch: '/pages/learnJTs/guide1.md',
+            			activeMatch: '/pages/learnJTs/install_guide.md',
 					},
+					{
+						text: 'API使用',
+						link: '/pages/learnJTs/detail_usage.md',
+						  activeMatch: '/pages/learnJTs/detail_usage.md',
+					  },
 					{
 						text: '待定...',
 						link: '/pages/other/other.md',
 					  },
 				  ],
 			},
-			// 字符串 - 页面文件路径
-			'/bar/README.md',
 		],
-		repo: 'https://gitlab.com/foo/bar',
+		repo: 'https://github.com/dongyuanwai/learnjts',
 
 		// 侧边栏
 		sidebar: {
 			// 不同子路径下的页面会使用不同的侧边栏
 			'/pages/learnJTs/': [
 				{
-				text: 'Guide',
-				children: ['guide1.md', 'guide2.md'],
+				text: '使用教程',
+				children: ['install_guide.md', 'detail_usage.md'],
 				},
 			],
 			'/pages/other/': [
