@@ -46,8 +46,60 @@ function getDataType(target){
 
 
 ## 数字转中文
+### capitalNum
+`capitalNum`用来将传入的阿拉伯数字转成中文数字，目前暂时只支持100一下的数字
 
+使用方式：
+```js
+// 引入
+import {capitalNum} from 'learnjts'
 
+// 使用
+capitalNum(1) // 一
+console.log(capitalNum(1)) // 一
+
+console.log(capitalNum(10)) // 十
+console.log(capitalNum(16)) // 十六
+console.log(capitalNum(20)) // 二十
+console.log(capitalNum(22)) // 二十二
+console.log(capitalNum(100)) // 一百
+```
+
+### 详细解析
+做的项目中经常从后台返回的是数字序数，但是要求却是用中文做序数，所以写了这个函数
+
+::: warning
+不支持负数和小数,且只支持100以下的整数
+:::
+#### 源码
+```js
+function capitalNum(num){
+    const capitalList = ['零', '一', '二', '三', '四', '五', '六', '七', '八', '九', '十'];
+    if(num < 0) {
+        return "不支持负数"
+    }else if(num >= 0 && num<=10){
+        // 返回十以内的数字
+        return capitalList[num]
+    }else if(num > 10 && num < 100){
+        // 十位数
+        const decade = String(num)[0];
+        // 个位数
+        const single = String(num)[1];
+        if(num < 20){
+            return `十${capitalList[Number(single)]}`;
+        }
+        // 进行拼接，如果个位数为0 
+        if(Number(single) === 0){
+            return `${capitalList[Number(decade)]}十`;
+        }else{
+            // 个位数不为0
+            return `${capitalList[Number(decade)]}十${capitalList[Number(single)]}`;
+        }
+    }else{
+        return "不支持100及以上的数字"
+    }
+}
+```
 
 
 
