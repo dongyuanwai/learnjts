@@ -3,7 +3,6 @@
   "version": "1.0.7",
   "description": "Learn JS and TS through actual combat",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "test": "jest",
     "docs:dev": "vuepress dev docs",

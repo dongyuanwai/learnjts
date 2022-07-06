@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="generator" content="VuePress 2.0.0-beta.48">
+    <style>
+      :root {
+        --c-bg: #fff;
+      }
+      html.dark {
+        --c-bg: #22272e;
+      }
+      html, body {
+        background-color: var(--c-bg);
+      }
+    </style>
+    <script>
+      const userMode = localStorage.getItem('vuepress-color-scheme');
+			const systemDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+			if (userMode === 'dark' || (userMode !== 'light' && systemDarkMode)) {
+				document.documentElement.classList.toggle('dark', true);
+			}
+    </script>
+    <link rel="icon" href="/images/logo.png"><title>LearnJTs</title><meta name="description" content="JS工具类方法,手写常用js方法汇总">
+    <link rel="modulepreload" href="/learnjts/assets/app.a8396cd7.js"><link rel="modulepreload" href="/learnjts/assets/404.html.8c25ff2f.js"><link rel="modulepreload" href="/learnjts/assets/404.html.265028f6.js"><link rel="prefetch" href="/learnjts/assets/index.html.a09af72b.js"><link rel="prefetch" href="/learnjts/assets/introduce.html.0d3dd155.js"><link rel="prefetch" href="/learnjts/assets/detail_usage.html.0eba08c1.js"><link rel="prefetch" href="/learnjts/assets/install_guide.html.ece087cc.js"><link rel="prefetch" href="/learnjts/assets/other.html.153e2b09.js"><link rel="prefetch" href="/learnjts/assets/index.html.d15ad587.js"><link rel="prefetch" href="/learnjts/assets/introduce.html.65984ac9.js"><link rel="prefetch" href="/learnjts/assets/detail_usage.html.80ab5d2f.js"><link rel="prefetch" href="/learnjts/assets/install_guide.html.7b53c45f.js"><link rel="prefetch" href="/learnjts/assets/other.html.1ebfd92d.js"><link rel="prefetch" href="/learnjts/assets/404.6c4141db.js"><link rel="prefetch" href="/learnjts/assets/Layout.c6c0ebc9.js">
+    <link rel="stylesheet" href="/learnjts/assets/style.33ab58b6.css">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="theme-container"><div class="theme-default-content"><h1>404</h1><blockquote>There&#39;s nothing here.</blockquote><a href="/learnjts/" class="">Take me home</a></div></div><!----><!--]--></div>
+    <script type="module" src="/learnjts/assets/app.a8396cd7.js" defer></script>
+  </body>
+</html>
