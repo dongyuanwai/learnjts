@@ -62,7 +62,6 @@ console.log(capitalNum(10)) // 十
 console.log(capitalNum(16)) // 十六
 console.log(capitalNum(20)) // 二十
 console.log(capitalNum(22)) // 二十二
-console.log(capitalNum(100)) // 一百
 ```
 
 ### 详细解析
@@ -100,7 +99,58 @@ function capitalNum(num){
     }
 }
 ```
+## 深拷贝
 
+### deepClone
 
+ `deepClone`可以将一个复杂的数据类型复制出来，重新开辟一个存储空间进行存储数据
 
+使用方式：只需要传入一个参数
+```js
+// 引入
+import {deepClone} from 'learnjts'
 
+// 使用
+let num = deepClone(1) // 可以拷贝基础数据类型
+
+let arr = deepClone([1,2,3,4]) //可以拷贝数组，亦可以拷贝复杂数据对象
+```
+
+### 详细解析
+
+深拷贝将会在新对象中创建一 个新的和原始对象中对应字段相同（内容相同）的字段，也就是说这个引用和原始对象的引用是不同的，我们在改变新对象中的这个字段的时候是不会影响到原始对象中对应字段的内容。
+
+#### 源码
+```js
+// 创建一个判断是否是复杂类型的方法
+const isComplexDataType = (target) => {
+    return (typeof target === 'object' || typeof target === 'function') && (target !== null)
+}
+
+const deepClone = function (target, hash = new WeakMap()) {
+    // 不是复杂数据类型类型直接返回
+    if(!isComplexDataType(target)) return target
+    // 日期对象直接返回一个新的日期对象
+    if (target.constructor === Date) return new Date(target)
+    // 正则对象直接返回一个新的正则对象
+    if (target.constructor === RegExp) return new RegExp(target)     
+    // 如果循环引用了就用 weakMap 来解决
+    if (hash.has(target)) return hash.get(target)
+    // 获取目标元素的所有自身属性
+    let allDesc = Object.getOwnPropertyDescriptors(target)
+    // 遍历传入参数所有键的特性
+    let cloneTarget = Object.create(Object.getPrototypeOf(target), allDesc)
+    //继承原型链
+    hash.set(target, cloneTarget)
+    for (let key of Reflect.ownKeys(target)) { 
+        cloneTarget[key] = (isComplexDataType(target[key]) && typeof target[key] !== 'function') ? deepClone(target[key], hash) : target[key]
+    }
+    return cloneTarget
+}
+```
+- `Object.getOwnPropertyDescriptors()` 方法用来获取一个对象的所有自身属性的描述符。
+返回值：所指定对象的所有自身属性的描述符，如果没有任何自身属性，则返回空对象。
+
+- `Object.getPrototypeOf()` 方法返回指定对象的原型（内部`[[Prototype]]`属性的值）
+- `Object.create()`方法创建一个新对象，使用现有的对象来提供新创建的对象的__proto__。
+- 静态方法 Reflect.ownKeys 返回一个由目标对象自身的属性键组成的数组。
