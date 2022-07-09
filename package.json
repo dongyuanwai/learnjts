@@ -23,9 +23,7 @@
   "homepage": "https://github.com/dongyuanwai/learnts#readme",
   "devDependencies": {
     "@babel/plugin-transform-modules-commonjs": "^7.17.9",
-    "@vuepress/plugin-search": "^2.0.0-beta.48",
     "eslint": "^8.14.0",
-    "jest": "^28.0.2",
-    "vuepress": "^2.0.0-beta.48"
+    "jest": "^28.0.2"
   }
 }
