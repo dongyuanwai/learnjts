@@ -1,8 +1,9 @@
 {
   "name": "learnjts",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Learn JS and TS through actual combat",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "jest",
     "docs:dev": "vuepress dev docs",

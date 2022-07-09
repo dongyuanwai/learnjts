@@ -1,4 +1,2 @@
 node_modules/
 coverage/
-docs/.vuepress/.cache
-docs/.vuepress/.temp
