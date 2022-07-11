@@ -29,3 +29,5 @@ getDataType(100) //会返回 number
 3. deepClone   深度克隆 （已完成未测试）
 4. debounce    防抖
 5. throttle    节流
+
+详细内容移步此文档![Learnjts文档](https://dongyuanwai.github.io/learnjtsdoc/)
